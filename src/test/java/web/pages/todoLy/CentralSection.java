@@ -13,12 +13,4 @@ public class CentralSection {
 
     public TextBox nameUpdateTextBox = new TextBox(By.id("ItemEditTextbox"));
 
-    public boolean verifyNameItem(String nameItem){
-        Label nameItemCreated = new Label(By.xpath("//td/div[text()='"+nameItem+"']"));
-        return nameItemCreated.isControlDisplayed();
-    }
-    public void clickItem(String nameItem){
-        Label nameItemCreated = new Label(By.xpath("//td/div[text()='"+nameItem+"']"));
-        nameItemCreated.click();
-    }
 }

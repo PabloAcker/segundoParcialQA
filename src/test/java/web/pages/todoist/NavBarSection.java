@@ -6,6 +6,7 @@ import web.controls.Task;
 import web.controls.TextBox;
 
 public class NavBarSection {
+    //xpath barra de navegacion section
     public Button openInfoButton = new Button(By.xpath("//img[@class='eFZ7q9V topBar _2a3b75a1 uoyuB7c e_yzyYk']"));
     //public Button openInfoButton = new Button(By.id(":r0:"));
     public Button openSettingsButton = new Button(By.xpath("//span[contains(text(), 'Config')]"));
@@ -14,10 +15,5 @@ public class NavBarSection {
     public TextBox taskName = new TextBox(By.xpath("//p[@data-placeholder='Nombre de la tarea']"));
     public Button buttonOk = new Button(By.xpath("//button[@data-testid='task-editor-submit-button']"));
     public Button buttonCancel = new Button(By.xpath("//button[@aria-label='Cancelar']"));
-    public Task task;
-    public boolean taskExists(String name){
-        task = new Task(By.xpath(String.format("//div[text()='"+name+"']")));
-        return task.isControlDisplayed();
-    }
 
 }

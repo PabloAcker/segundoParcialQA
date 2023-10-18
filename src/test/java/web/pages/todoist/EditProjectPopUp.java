@@ -16,9 +16,4 @@ public class EditProjectPopUp {
     public Button cancelButton = new Button(By.xpath("//button//span[text()='Cancelar']/.."));
 
     public Label verifyColorLabel;
-
-    public Label addParameterVerifyColorLabel(String parameter) {
-        verifyColorLabel = new Label(By.xpath("//button[@class='color_dropdown_toggle form_field_control']//span[text()='"+parameter+"']"));
-        return verifyColorLabel;
-    }
 }

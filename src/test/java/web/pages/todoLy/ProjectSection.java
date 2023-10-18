@@ -15,8 +15,6 @@ public class ProjectSection {
     public Button projectDropdownEditButton = new Button(By.xpath("//ul[@id='projectContextMenu']//a[@href='#edit']"));
     public TextBox projectEditNameTextbox = new TextBox(By.xpath("//td[@class='ProjItemContent UnderEditingItem']//div[@id='ProjectEditDiv']//input[@id='ItemEditTextbox']"));
 
-    //public Label editedProjectLabel;
-
     public Button saveProjectNameButton = new Button(By.xpath("//td[@class='ProjItemContent UnderEditingItem']//div[@id='ProjectEditDiv']//img[@id='ItemEditSubmit']"));
     public Button projectDropdownDeleteButton = new Button(By.xpath("//ul[@id='projectContextMenu']//a[@href='#delete']"));
 

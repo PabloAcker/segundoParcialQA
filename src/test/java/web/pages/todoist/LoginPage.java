@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import web.controls.Button;
 import web.controls.TextBox;
 public class LoginPage {
+    //xpath login page
     public TextBox emailTextBox = new TextBox(By.xpath("//input[contains(@placeholder, 'email')]"));
     public TextBox passwordTextBox = new TextBox(By.xpath("//input[contains(@placeholder, 'contrase')]"));
     public TextBox nameTxtBox = new TextBox(By.xpath("//input[contains(@placeholder, 'Por ej. Juan P\u00e9rez')]"));

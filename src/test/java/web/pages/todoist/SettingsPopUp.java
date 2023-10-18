@@ -5,6 +5,7 @@ import web.controls.Button;
 import web.controls.TextBox;
 
 public class SettingsPopUp {
+    //xpath signUp popUp section
     public Button changePasswordButton = new Button(By.xpath("//a[@href='/app/settings/account/password']"));
     public Button exitSettingsButton = new Button(By.xpath("//button[contains(@aria-label, 'Cerrar config')]"));
     public Button accountSection = new Button(By.id(":r3j:"));
