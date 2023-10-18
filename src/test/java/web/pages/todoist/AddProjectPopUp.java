@@ -1,8 +1,8 @@
 package web.pages.todoist;
 
+import org.openqa.selenium.By;
 import web.controls.Button;
 import web.controls.TextBox;
-import org.openqa.selenium.By;
 public class AddProjectPopUp {
     public TextBox projectNameTextbox = new TextBox(By.xpath("//input[@name='name']"));
 

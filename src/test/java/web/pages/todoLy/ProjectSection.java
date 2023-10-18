@@ -1,9 +1,9 @@
 package web.pages.todoLy;
 
+import org.openqa.selenium.By;
 import web.controls.Button;
 import web.controls.Label;
 import web.controls.TextBox;
-import org.openqa.selenium.By;
 public class ProjectSection {
     public Button addProjectButton = new Button(By.xpath("//td[text()='Add New Project']"));
     public TextBox projectNameTextBox = new TextBox(By.id("NewProjNameInput"));

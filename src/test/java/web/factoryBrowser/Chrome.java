@@ -9,7 +9,7 @@ public class Chrome implements IBrowser{
     public WebDriver create() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chrome/chromedriver.exe");
         WebDriver chrome = new ChromeDriver();
-        chrome.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+        chrome.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         chrome.manage().window().maximize();
         return chrome;
     }
